@@ -1,0 +1,54 @@
+.loginContainer {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #fff08d, #fff, #5252ff);
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formContainer {
+  margin: 10px;
+}
+
+.checkboxContainer {
+  margin: 10px 0;
+}
+
+.loginContainer button {
+  padding: 10px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: #000080;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.loginContainer button:hover {
+  color: #000080;
+}
+
+.iconContainer {
+  margin-top: 10px;
+}
+
+.iconContainer .icon {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.line {
+  background-color: #000080;
+  height: 3px;
+  width: 80%;
+}

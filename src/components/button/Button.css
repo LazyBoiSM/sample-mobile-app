@@ -1,0 +1,18 @@
+.login {
+  width: 120px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 35px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #000080;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.login:hover {
+  background-color: transparent;
+  border: 1px solid #000080;
+  color: #000080;
+}

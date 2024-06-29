@@ -1,0 +1,32 @@
+.line {
+  height: 4px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.line3 {
+  width: 50%;
+  transform: translateX(20px);
+  transition: all 0.4s ease;
+}
+
+.line2 {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.line1 {
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.lineParent {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
