@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/sample-mobile-app/static/css/main.32974f0e.css",
-    "main.js": "/sample-mobile-app/static/js/main.841ccfcf.js",
-    "static/media/1.jpg": "/sample-mobile-app/static/media/1.7510b74602102e4384be.jpg",
+    "main.css": "/sample-mobile-app/static/css/main.225c0e1d.css",
+    "main.js": "/sample-mobile-app/static/js/main.4d0f08b5.js",
+    "static/media/slick.svg": "/sample-mobile-app/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/sample-mobile-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/sample-mobile-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/sample-mobile-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sample-mobile-app/index.html",
-    "main.32974f0e.css.map": "/sample-mobile-app/static/css/main.32974f0e.css.map",
-    "main.841ccfcf.js.map": "/sample-mobile-app/static/js/main.841ccfcf.js.map"
+    "main.225c0e1d.css.map": "/sample-mobile-app/static/css/main.225c0e1d.css.map",
+    "main.4d0f08b5.js.map": "/sample-mobile-app/static/js/main.4d0f08b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.32974f0e.css",
-    "static/js/main.841ccfcf.js"
+    "static/css/main.225c0e1d.css",
+    "static/js/main.4d0f08b5.js"
   ]
 }
