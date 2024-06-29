@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
@@ -17,10 +17,20 @@ import Account from "./components/loginAndLogout/account/Account";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [login, setLogin] = useState(true);
+  const [pointer, setPointer] = useState(null);
   return (
     <div>
-      <BrowserRouter>
-        <Context.Provider value={{ darkMode, setDarkMode, login, setLogin }}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Context.Provider
+          value={{
+            darkMode,
+            setDarkMode,
+            login,
+            setLogin,
+            pointer,
+            setPointer,
+          }}
+        >
           <div className="all">
             <SideBar />
             <div className="main">

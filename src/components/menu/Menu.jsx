@@ -9,30 +9,55 @@ import {
   faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import "../Components.css";
+import { useContext } from "react";
+import { Context } from "../context/Context";
 
 const menuItems = [
-  { title: "Home", url: "/", icon: { name: faHouse } },
-  { title: "Products", url: "/products", icon: { name: faBagShopping } },
-  { title: "Services", url: "/services", icon: { name: faWrench } },
-  { title: "ContactUs", url: "/contact-us", icon: { name: faAddressBook } },
-  { title: "AboutUs", url: "about-us", icon: { name: faCircleInfo } },
+  { title: "home", url: "/", icon: { name: faHouse } },
+  { title: "products", url: "/products", icon: { name: faBagShopping } },
+  { title: "services", url: "/services", icon: { name: faWrench } },
+  { title: "contactUs", url: "/contact-us", icon: { name: faAddressBook } },
+  { title: "aboutUs", url: "about-us", icon: { name: faCircleInfo } },
 ];
 
 function Menu() {
+  const { pointer } = useContext(Context);
+  const opacity1 = {
+    opacity: "1",
+  };
+
+  const opacity0 = {
+    opacity: "0",
+  };
+
+  const menuHighlight = {
+    backgroundColor: "lightgray",
+    transform: "scale(1.03)",
+    borderRadius: "5px",
+  };
+
+  const menuLowlight = {};
   return (
-    <ul>
+    <div className="menuItemsContainer">
       {menuItems.map((item, index) => {
         return (
-          <li key={index}>
-            <div className="pointer"></div>
+          <div
+            className="menuItems"
+            style={pointer == item.title ? menuHighlight : menuLowlight}
+            key={index}
+          >
+            <div
+              className="pointer"
+              style={pointer == item.title ? opacity1 : opacity0}
+            ></div>
             <NavLink className="title f14" to={item.url}>
               <FontAwesomeIcon className="icon" icon={item.icon.name} />
               {item.title}
             </NavLink>
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </div>
   );
 }
 

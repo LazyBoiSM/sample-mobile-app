@@ -1,22 +1,14 @@
 import "./LeftFeed.css";
 import "../Components.css";
-import { Carousel } from "react-bootstrap";
-import "../../images/1.jpg";
+import MyCarousel from "../carousel/MyCarousel";
+import News from "../news/News";
 
 function LeftFeed() {
   return (
-    <div className="leftFeedContainer">
-      <Carousel>
-        <Carousel.Item>
-          <img src="../../images/1.jpg" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="../../images/1.jpg" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="../../images/1.jpg" />
-        </Carousel.Item>
-      </Carousel>
+    <div className="leftFeedContainer boxSizing">
+      <MyCarousel />
+      <div className="line"></div>
+      <News />
     </div>
   );
 }

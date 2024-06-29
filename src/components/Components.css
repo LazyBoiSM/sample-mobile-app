@@ -2,6 +2,10 @@
   box-shadow: 2px 2px 5px #707070;
 }
 
+.ts {
+  transition: all 0.4s ease-out;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -36,6 +40,10 @@
 
 .mgB {
   margin-bottom: 5px;
+}
+
+.mgT {
+  margin-top: 10px;
 }
 
 .userSelectN {
